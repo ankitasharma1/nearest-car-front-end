@@ -1,0 +1,46 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-form/iron-form.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-view1">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      <form>
+        <p> Insert Name </p><input id="name" type="text">
+        <p> Do you have a car? </p><input id="car" type="text">
+        <p> What's your phone number? </p><input id="phonenumber" type="text">
+        <p> What's your location? </p><input id="location" type="text">
+        <p> <button on-tap="submitQuery">Submit</button></p>
+        </input> 
+      </form>
+      
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-view1',
+      submitQuery: function() {
+        var name = this.$.name.value
+        
+      }
+    });
+  </script>
+</dom-module>
