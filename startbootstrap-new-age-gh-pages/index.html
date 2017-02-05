@@ -26,6 +26,7 @@
 
     <!-- Theme CSS -->
     <link href="css/new-age.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,38 +47,33 @@
         <!-- /.container-fluid -->
     </nav>
     <form >
-        Name (first and last):  <input type="text" name="name" />
+        <div class="info">
         <br />
-        Where are you coming from? (city, state) <input type="text" location="location" />
+        <center> Name (first and last): <input type="text" name="name" </center>
         <br />
-        Do you need to carpool?
         <br />
-        <input type="radio" name="carpoolyes" value="on"> Yes
+        <center> Where are you coming from? (city, state) <input type="text" </center>
         <br />
-        <input type="radio" name="carpoolno" value="on"> No
         <br />
-        Are you a driver or a rider?
+        <center> Do you need to carpool? <input type="radio" name="carpoolyes" value="on"> Yes <input type="radio" name="carpoolno" value="on"> No </center>
         <br />
-        <input type="radio" name="driver" value="on"> Driver
+        <center> Are you a driver or a rider? <input type="radio" name="driver" value="on"> Driver <input type="radio" name="rider" value="on"> Rider </center>
         <br />
-        <input type="radio" name="rider" value="on"> Rider
+        <center> Are you driving here? <input type="radio" name="driveyes" value="on"> Yes <input type="radio" name="driveno" value ="on"> No </center>
         <br />
-        Are you driving here?
-        <br />
-        <input type="radio" name="driveyes" value="on"> Yes
-        <br />
-        <input type="radio" name="driveno" value ="on"> No
-        <br />
-        If yes, how many free seats do you have?
+        <center> If yes, how many free seats do you have?
         <input type="radio" name="1" value="on"> 1
         <input type="radio" name="2" value="on"> 2
         <input type="radio" name="3" value="on"> 3
         <input type="radio" name="4" value="on"> 4
         <input type="radio" name="5" value="on"> 5
         <input type="radio" name="6" value="on"> 6
-        <input type="radio" name="7" value="on"> 7
+        <input type="radio" name="7" value="on"> 7 </center>
         <br />
-        
+        Please enter your phone number: <input type ="text" phone number = "phone number" />
+        <br />
+        <br />
+        </div>
     </form>
 
 
