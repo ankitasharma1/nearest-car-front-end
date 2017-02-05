@@ -32,6 +32,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <input id="location" type="text" placeholder="How many seats do you have?" size="80"><br><br>
         <input id="location" type="text" placeholder="Contact Number" size="80"><br><br>
         <p> <button on-tap="submitQuery">Submit</button></p>
+        <iron-ajax url="/signup" method="POST" id="ajax"></iron-ajax>
         </input> 
       </form>
     </div>
